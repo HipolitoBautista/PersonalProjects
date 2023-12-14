@@ -1,0 +1,13 @@
+[Unit]
+Description = myappNew app 
+
+[Service]
+Environment=PORT=443
+Type=simple
+Restart=always
+RestartSec=5s
+WorkingDirectory=/root
+ExecStart=/root/myappNew
+
+[Install]
+WantedBy=multi-user.target
